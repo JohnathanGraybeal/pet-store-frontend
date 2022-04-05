@@ -1,7 +1,7 @@
 import useSWRInfinite from "swr/infinite";
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
-const baseUrl = "https://localhost:5001/api";
+const baseUrl = "https://csci4350-001-pet-store.herokuapp.com/api";
 
 export const usePaginateItems = (path) => {
   if (!path) {
