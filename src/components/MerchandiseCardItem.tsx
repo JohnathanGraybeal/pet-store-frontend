@@ -1,5 +1,5 @@
 import { StarIcon } from "@chakra-ui/icons";
-import { Badge, Box, Button, useColorModeValue, Text } from "@chakra-ui/react";
+import { Badge, Box, Button, useColorModeValue, Text, Link } from "@chakra-ui/react";
 import React from "react";
 
 interface MerchandiseCardItemProps {
@@ -47,7 +47,7 @@ export const MerchandiseCardItem: React.FC<MerchandiseCardItemProps> = ({
       </Box>
 
       <Box textAlign={"center"}>
-        <Button
+        <Link href="/browse/checkout"><Button
           variant={useColorModeValue("gray.100", "gray.900")}
           size="lg"
           mt={3}
@@ -55,6 +55,7 @@ export const MerchandiseCardItem: React.FC<MerchandiseCardItemProps> = ({
         >
           Buy Now
         </Button>
+        </Link>
       </Box>
     </Box>
   );

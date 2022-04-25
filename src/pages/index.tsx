@@ -13,9 +13,11 @@ import { Text } from "@chakra-ui/react";
 //Need to have custom.d.ts open in another tab for these to not have an error for some reason
 import doge from "../images/doge.jpg";
 import nelson from "../images/nelson.jpg";
+import { PageDescription } from "../components/PageDescription";
 
 const Index = () => (
   <Container height="100vh">
+    <PageDescription description="home" />
     <Nav />
     <Main alignItems={"center"} width={"90%"} height={"100vh"}>
       <Hero />
@@ -42,7 +44,7 @@ const Index = () => (
         color={useColorModeValue("gray.900", "gray.100")}
       >
         {
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sem nulla, euismod id lobortis nec, egestas id libero. Nullam faucibus, arcu sit amet rutrum feugiat, ipsum est consequat urna, sit amet lacinia tortor magna nec mauris. Nullam at nisl bibendum tellus posuere bibendum. Nunc a ex ut nibh dapibus porta. Donec et pretium quam. Nunc ac lectus tincidunt, luctus leo et, vehicula augue. Proin iaculis ex in lectus molestie, ac rhoncus nisl tristique. "
+          "Our pet store is the best place to adopt an animal. Whether you are looking for something simple or exotic we have you covered. Looking for a shark? We will work something out. As long as you don’t ask where your specimens come from, we have no issues! If you insist to know. You can meet one of our local representatives at 1165 Shakespeare Ave, New York City, NY 10452-3904. A representative is available every 3rd Tuesday of every month from 4:15 pm to 5:40 pm. Have a great day and hope to see you again!"
         }
       </Text>
     </Main>

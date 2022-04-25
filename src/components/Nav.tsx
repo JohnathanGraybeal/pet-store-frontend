@@ -14,6 +14,7 @@ import {
   MenuDivider,
   MenuItem,
 } from "@chakra-ui/react";
+import { useEffect, useState } from "react";
 import { Link } from "./Link";
 import { Logo } from "./Logo";
 
@@ -21,6 +22,13 @@ interface NavProps {}
 
 export const Nav: React.FC<NavProps> = (props: any) => {
   const { colorMode, toggleColorMode } = useColorMode();
+
+  const [name, setName] = useState("Guest");
+
+  useEffect(() => {
+    setName(window.localStorage.getItem("name"));
+  }, [name]);
+
   return (
     <>
       <Box
@@ -74,13 +82,15 @@ export const Nav: React.FC<NavProps> = (props: any) => {
                   </Center>
                   <br />
                   <Center>
-                    <p>Username</p>
+                    <p>{name !== null ? name.toUpperCase() : "GUEST"}</p>
                   </Center>
                   <br />
                   <MenuDivider />
                   <MenuItem>Your Orders</MenuItem>
                   <MenuItem>Account Settings</MenuItem>
-                  <MenuItem><Link href="/login">Log in</Link></MenuItem>
+                  <MenuItem>
+                    <Link href="/login">Log in</Link>
+                  </MenuItem>
                 </MenuList>
               </Menu>
             </Stack>
