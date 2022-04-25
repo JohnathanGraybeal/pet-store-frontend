@@ -20,7 +20,7 @@ const Index = () => (
     <Nav />
     <Main alignItems={"center"} width={"90%"} height={"100vh"}>
       <Hero />
-      <IntroImage alttext="Doge" imagepath={doge} blururl={doge}/>
+      //<IntroImage alttext="Doge" imagepath={doge} blururl={doge}/>
       <Introduction
         introtext={
           "Welcome to the best pet store that has ever existed on the face of planet Earth"
@@ -46,7 +46,7 @@ const Index = () => (
           "Our pet store is the best place to adopt an animal. Whether you are looking for something simple or exotic we have you covered. Looking for a shark? We will work something out. As long as you don’t ask where your specimens come from, we have no issues! If you insist to know. You can meet one of our local representatives at 1165 Shakespeare Ave, New York City, NY 10452-3904. A representative is available every 3rd Tuesday of every month from 4:15 pm to 5:40 pm. Have a great day and hope to see you again!"
         }
       </Text>
-      <IntroImage alttext="Nelson" imagepath={nelson} blururl={nelson}/>
+      //<IntroImage alttext="Nelson" imagepath={nelson} blururl={nelson}/>
     </Main>
     <Footer />
   </Container>
