@@ -1,11 +1,11 @@
 import { Container } from "@chakra-ui/react";
 
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 
 interface IntroImageProps {
     alttext?: string;
     imagepath?: string | StaticImageData; 
-    blururl?: string | StaticImageData;
+    blururl?: string;
   }
 
 export const IntroImage: React.FC<IntroImageProps> = ({ alttext, imagepath, blururl }) => {
