@@ -4,8 +4,8 @@ import Image from 'next/image'
 
 interface IntroImageProps {
     alttext?: string;
-    imagepath?: string; 
-    blururl?: string;
+    imagepath?: string | StaticImageData; 
+    blururl?: string | StaticImageData;
   }
 
 export const IntroImage: React.FC<IntroImageProps> = ({ alttext, imagepath, blururl }) => {
