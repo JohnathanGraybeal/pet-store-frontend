@@ -23,7 +23,7 @@ const Index = () => (
       <IntroImage alttext="Doge" imagepath={doge} blururl="/../images/doge.jpg"/>
       <Introduction
         introtext={
-          "Welcome to the best pet store that has ever existed on the face of planet Earth"
+          "Welcome to the best pet store that has ever existed on the face of planet Mars"
         }
       />
       <Introduction
