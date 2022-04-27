@@ -18,12 +18,12 @@ const Index = () => (
   <Container height="100vh">
     <PageDescription description="home" />
     <Nav />
-    <Main alignItems={"center"} width={"90%"} height={"100vh"}>;sng;sd;ng;dsg;ogd
+    <Main alignItems={"center"} width={"90%"} height={"100vh"}>
       <Hero />
       <IntroImage alttext="Doge" imagepath={doge} blururl="/../images/doge.jpg"/>
       <Introduction
         introtext={
-          "Welcome to the best pet store that has ever existed on the face of planet Earth"
+          "Welcome to the best pet store that has ever existed on the face of planet Mars"
         }
       />
       <Introduction
