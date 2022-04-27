@@ -18,7 +18,7 @@ const Index = () => (
   <Container height="100vh">
     <PageDescription description="home" />
     <Nav />
-    <Main alignItems={"center"} width={"90%"} height={"100vh"}>
+    <Main alignItems={"center"} width={"90%"} height={"100vh"}>;sng;sd;ng;dsg;ogd
       <Hero />
       <IntroImage alttext="Doge" imagepath={doge} blururl="/../images/doge.jpg"/>
       <Introduction
